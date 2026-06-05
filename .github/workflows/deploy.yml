@@ -1,0 +1,59 @@
+name: Deploy Vitality v6 registry to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Single concurrent deploy. Don't cancel in-progress runs — they're cheap and
+# cancelling mid-deploy can leave Pages in a half-state.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      # Must run BEFORE Build — the build step reads steps.pages.outputs.base_url
+      # to set basePath/assetPrefix (project-site URLs like
+      # /<repo>/_next/... instead of /_next/...). Wrong order = broken Pages.
+      - name: Configure GitHub Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Build (static export)
+        run: npm run build
+        env:
+          # next.config.ts derives basePath + assetPrefix from this var, and
+          # code-extractor.ts embeds it into install snippets in the demo.
+          NEXT_PUBLIC_REGISTRY_URL: ${{ steps.pages.outputs.base_url }}
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

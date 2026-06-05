@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "header",
+  "type": "registry:block",
+  "title": "header",
+  "files": [
+    {
+      "path": "registry/vitality/blocks/header.tsx",
+      "content": "import * as React from \"react\"\nimport Link from \"next/link\"\nimport { Bell, Search } from \"lucide-react\"\n\nimport { Avatar, AvatarFallback, AvatarImage } from \"@/registry/vitality/ui/avatar\"\nimport { Button } from \"@/registry/vitality/ui/button\"\nimport {\n  InputGroup,\n  InputGroupAddon,\n  InputGroupInput,\n} from \"@/registry/vitality/ui/input-group\"\n\ninterface HeaderProps {\n  brand?: string\n  nav?: Array<{ label: string; href: string }>\n}\n\nfunction Header({\n  brand = \"Vitality\",\n  nav = [\n    { label: \"Dashboard\", href: \"/\" },\n    { label: \"Patients\", href: \"/patients\" },\n    { label: \"Appointments\", href: \"/appointments\" },\n  ],\n}: HeaderProps) {\n  return (\n    <header\n      data-slot=\"header\"\n      className=\"flex h-14 items-center justify-between gap-4 border-b bg-background px-6\"\n    >\n      <div className=\"flex items-center gap-6\">\n        <Link href=\"/\" className=\"text-base font-semibold tracking-tight\">\n          {brand}\n        </Link>\n        <nav className=\"hidden items-center gap-1 md:flex\">\n          {nav.map((item) => (\n            <Link\n              key={item.href}\n              href={item.href}\n              className=\"rounded-md px-2 py-1 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground\"\n            >\n              {item.label}\n            </Link>\n          ))}\n        </nav>\n      </div>\n\n      <div className=\"flex items-center gap-2\">\n        <InputGroup className=\"hidden w-64 md:flex\">\n          <InputGroupAddon align=\"inline-start\">\n            <Search />\n          </InputGroupAddon>\n          <InputGroupInput placeholder=\"Search…\" />\n        </InputGroup>\n        <Button variant=\"ghost\" size=\"icon\" aria-label=\"Notifications\">\n          <Bell />\n        </Button>\n        <Avatar>\n          <AvatarImage src=\"\" alt=\"\" />\n          <AvatarFallback>U</AvatarFallback>\n        </Avatar>\n      </div>\n    </header>\n  )\n}\n\nexport { Header }\n",
+      "type": "registry:block"
+    }
+  ]
+}

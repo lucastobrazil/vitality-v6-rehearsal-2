@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "chip",
+  "type": "registry:ui",
+  "title": "chip",
+  "files": [
+    {
+      "path": "registry/vitality/ui/chip.tsx",
+      "content": "import * as React from \"react\"\nimport { Slot } from \"radix-ui\"\n\nimport { cn } from \"@/lib/utils\"\n\n// Single-style chip (no variants) — copy of Badge shape with left-border accent.\n// asChild allows rendering as <a> or other element via Slot pattern.\ninterface ChipProps extends React.HTMLAttributes<HTMLSpanElement> {\n  asChild?: boolean\n}\n\nfunction Chip({ className, asChild = false, ...props }: ChipProps) {\n  const Comp = asChild ? Slot.Root : \"span\"\n  return (\n    <Comp\n      data-slot=\"chip\"\n      className={cn(\n        \"inline-flex items-center justify-center w-fit whitespace-nowrap shrink-0\",\n        \"px-1.5 h-5 min-w-5 text-xs font-medium rounded-full\",\n        \"[&>svg]:size-3 gap-1 [&>svg]:pointer-events-none\",\n        \"bg-foreground/10 text-foreground border-[1px] border-l-[3px]\",\n        \"border-gray-300 [a&]:hover:bg-foreground/15\",\n        className\n      )}\n      {...props}\n    />\n  )\n}\n\nexport { Chip }\n",
+      "type": "registry:ui"
+    }
+  ]
+}

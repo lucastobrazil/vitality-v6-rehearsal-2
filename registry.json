@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "vitality",
+  "homepage": "",
+  "items": [
+    {
+      "name": "header",
+      "type": "registry:block",
+      "title": "Header",
+      "files": [
+        {
+          "path": "registry/vitality/blocks/header.tsx",
+          "type": "registry:block"
+        }
+      ]
+    },
+    {
+      "name": "side-nav",
+      "type": "registry:block",
+      "title": "Side Nav",
+      "files": [
+        {
+          "path": "registry/vitality/blocks/side-nav.tsx",
+          "type": "registry:block"
+        }
+      ]
+    }
+  ]
+}

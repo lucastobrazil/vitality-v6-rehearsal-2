@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "toaster",
+  "type": "registry:ui",
+  "title": "toaster",
+  "files": [
+    {
+      "path": "registry/vitality/ui/toaster.tsx",
+      "content": "\"use client\"\n\nimport { useTheme } from \"next-themes\"\nimport { Toaster as Sonner, type ToasterProps } from \"sonner\"\nimport {\n  CircleCheckIcon,\n  InfoIcon,\n  TriangleAlertIcon,\n  OctagonXIcon,\n  Loader2Icon,\n} from \"lucide-react\"\n\nconst Toaster = ({ ...props }: ToasterProps) => {\n  const { theme = \"system\" } = useTheme()\n\n  return (\n    <Sonner\n      theme={theme as ToasterProps[\"theme\"]}\n      className=\"toaster group\"\n      richColors\n      icons={{\n        success: <CircleCheckIcon className=\"size-4\" />,\n        info: <InfoIcon className=\"size-4\" />,\n        warning: <TriangleAlertIcon className=\"size-4\" />,\n        error: <OctagonXIcon className=\"size-4\" />,\n        loading: <Loader2Icon className=\"size-4 animate-spin\" />,\n      }}\n      style={\n        {\n          \"--normal-bg\": \"var(--popover)\",\n          \"--normal-text\": \"var(--popover-foreground)\",\n          \"--normal-border\": \"var(--border)\",\n          \"--border-radius\": \"var(--radius)\",\n          \"--success-bg\": \"var(--success)\",\n          \"--success-text\": \"var(--success-foreground)\",\n          \"--success-border\": \"var(--success)\",\n          \"--warning-bg\": \"var(--warning)\",\n          \"--warning-text\": \"var(--warning-foreground)\",\n          \"--warning-border\": \"var(--warning)\",\n          \"--error-bg\": \"var(--destructive)\",\n          \"--error-text\": \"var(--destructive-foreground)\",\n          \"--error-border\": \"var(--destructive)\",\n          \"--info-bg\": \"var(--info)\",\n          \"--info-text\": \"var(--info-foreground)\",\n          \"--info-border\": \"var(--info)\",\n        } as React.CSSProperties\n      }\n      toastOptions={{\n        classNames: {\n          toast: \"cn-toast\",\n        },\n      }}\n      {...props}\n    />\n  )\n}\n\nexport { Toaster }\n",
+      "type": "registry:ui"
+    }
+  ]
+}

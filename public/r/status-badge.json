@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "status-badge",
+  "type": "registry:ui",
+  "title": "status-badge",
+  "files": [
+    {
+      "path": "registry/vitality/ui/status-badge.tsx",
+      "content": "import * as React from \"react\"\nimport { Slot } from \"radix-ui\"\nimport { cva, type VariantProps } from \"class-variance-authority\"\n\nimport { cn } from \"@/lib/utils\"\n\nconst statusBadgeVariants = cva(\n  [\n    \"inline-flex items-center justify-center w-fit whitespace-nowrap shrink-0\",\n    \"px-2 py-0.5 text-xs font-medium border border-transparent rounded-md\",\n    \"[&>svg]:size-3 gap-1 [&>svg]:pointer-events-none\",\n  ].join(\" \"),\n  {\n    variants: {\n      color: {\n        default: \"bg-secondary text-secondary-foreground [a&]:hover:bg-secondary/90\",\n        neutral: \"bg-foreground/70 text-muted [a&]:hover:bg-foreground/90\",\n      },\n      severity: {\n        default: \"text-foreground bg-muted\",\n        success: \"text-success bg-success/10 [&>svg]:text-success\",\n        warning: \"text-warning bg-warning/10 [&>svg]:text-warning\",\n        critical: \"text-critical bg-critical/10 [&>svg]:text-critical\",\n        info: \"text-info bg-info/10 [&>svg]:text-info\",\n        brand: \"text-brand bg-brand/10 [&>svg]:text-brand\",\n      },\n    },\n    defaultVariants: {\n      color: \"default\",\n      severity: \"default\",\n    },\n  }\n)\n\ninterface StatusBadgeProps\n  extends Omit<React.HTMLAttributes<HTMLSpanElement>, \"color\">,\n    VariantProps<typeof statusBadgeVariants> {\n  asChild?: boolean\n}\n\nfunction StatusBadge({\n  className,\n  color,\n  severity,\n  asChild = false,\n  ...props\n}: StatusBadgeProps) {\n  const Comp = asChild ? Slot.Root : \"span\"\n  return (\n    <Comp\n      data-slot=\"status-badge\"\n      className={cn(statusBadgeVariants({ color, severity }), className)}\n      {...props}\n    />\n  )\n}\n\nexport { StatusBadge, statusBadgeVariants }\n",
+      "type": "registry:ui"
+    }
+  ]
+}

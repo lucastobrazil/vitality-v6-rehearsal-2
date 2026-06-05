@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "vitality-v6": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@shadcn/mcp-server",
+        "https://lucastobrazil.github.io/vitality-v6-rehearsal-2"
+      ]
+    }
+  }
+}

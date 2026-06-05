@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "date-picker",
+  "type": "registry:ui",
+  "title": "date-picker",
+  "files": [
+    {
+      "path": "registry/vitality/ui/date-picker.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport { CalendarIcon } from \"lucide-react\"\nimport { format } from \"date-fns\"\n\nimport { cn } from \"@/lib/utils\"\nimport { Button } from \"@/registry/vitality/ui/button\"\nimport { Calendar } from \"@/registry/vitality/ui/calendar\"\nimport {\n  Popover,\n  PopoverContent,\n  PopoverTrigger,\n} from \"@/registry/vitality/ui/popover\"\n\ninterface DatePickerProps {\n  value?: Date\n  onChange?: (date: Date | undefined) => void\n  placeholder?: string\n  className?: string\n  disabled?: boolean\n}\n\nfunction DatePicker({\n  value,\n  onChange,\n  placeholder = \"Pick a date\",\n  className,\n  disabled,\n}: DatePickerProps) {\n  const [internalDate, setInternalDate] = React.useState<Date | undefined>(\n    undefined\n  )\n  const isControlled = value !== undefined || onChange !== undefined\n  const date = isControlled ? value : internalDate\n\n  const handleSelect = React.useCallback(\n    (next: Date | undefined) => {\n      if (!isControlled) setInternalDate(next)\n      onChange?.(next)\n    },\n    [isControlled, onChange]\n  )\n\n  return (\n    <Popover>\n      <PopoverTrigger asChild>\n        <Button\n          data-slot=\"date-picker-trigger\"\n          variant=\"outline\"\n          disabled={disabled}\n          className={cn(\n            \"w-[240px] justify-start text-left font-normal\",\n            !date && \"text-muted-foreground\",\n            className\n          )}\n        >\n          <CalendarIcon />\n          {date ? format(date, \"PPP\") : placeholder}\n        </Button>\n      </PopoverTrigger>\n      <PopoverContent className=\"w-auto p-0\" align=\"start\">\n        <Calendar mode=\"single\" selected={date} onSelect={handleSelect} />\n      </PopoverContent>\n    </Popover>\n  )\n}\n\nexport { DatePicker }\nexport type { DatePickerProps }\n",
+      "type": "registry:ui"
+    }
+  ]
+}

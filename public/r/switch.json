@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "switch",
+  "type": "registry:ui",
+  "title": "switch",
+  "files": [
+    {
+      "path": "registry/vitality/ui/switch.tsx",
+      "content": "\"use client\"\n\nimport * as React from \"react\"\nimport { Switch as SwitchPrimitive } from \"radix-ui\"\nimport { Check, X } from \"lucide-react\"\n\nimport { cn } from \"@/lib/utils\"\n\nfunction Switch({\n  className,\n  checked,\n  size = \"default\",\n  ...props\n}: React.ComponentProps<typeof SwitchPrimitive.Root> & {\n  size?: \"sm\" | \"default\"\n}) {\n  return (\n    <SwitchPrimitive.Root\n      data-slot=\"switch\"\n      data-size={size}\n      checked={checked}\n      className={cn(\n        \"peer group/switch relative inline-flex shrink-0 cursor-pointer items-center rounded-full border border-transparent transition-all outline-none px-0.75\",\n        \"data-[size=default]:h-[1.25rem] data-[size=default]:w-9\",\n        \"data-[size=sm]:h-[14px] data-[size=sm]:w-[24px]\",\n        \"data-unchecked:bg-foreground/50 dark:data-unchecked:bg-foreground/30\",\n        \"data-checked:bg-primary\",\n        \"data-checked:justify-start data-unchecked:justify-end\",\n        \"[&_svg:not([class*='size-'])]:size-3\",\n        \"[&_svg:not([class*='text-'])]:text-primary-foreground\",\n        \"focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50\",\n        \"data-disabled:cursor-not-allowed data-disabled:opacity-50\",\n        className\n      )}\n      {...props}\n    >\n      <SwitchPrimitive.Thumb\n        data-slot=\"switch-thumb\"\n        className={cn(\n          \"pointer-events-none block rounded-full bg-background shadow-lg ring-0\",\n          \"group-data-[size=default]/switch:size-4\",\n          \"group-data-[size=sm]/switch:size-3\",\n          \"group-data-[size=default]/switch:data-checked:translate-x-[calc(100%-2px)]\",\n          \"group-data-[size=sm]/switch:data-checked:translate-x-[calc(100%-2px)]\",\n          \"data-unchecked:translate-x-0\",\n          \"absolute left-[1px]\",\n          \"transition-transform\"\n        )}\n      />\n      {checked ? <Check /> : <X />}\n    </SwitchPrimitive.Root>\n  )\n}\n\nexport { Switch }\n",
+      "type": "registry:ui"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+2026-06-05T22:39:35.538Z  [smoke] Smoke-test target: https://lucastobrazil.github.io/vitality-v6-rehearsal-2/r/button.json
+2026-06-05T22:39:35.538Z  [smoke] Retries: 3 × 30s backoff
+2026-06-05T22:39:35.538Z  [smoke] Probe attempt 1/3
+2026-06-05T22:39:35.639Z  [smoke] ✓ https://lucastobrazil.github.io/vitality-v6-rehearsal-2/r/button.json responded
+2026-06-05T22:39:35.640Z  [smoke] Temp consumer dir: /var/folders/9v/dml1nfyn747cf5nj1zh83p2m0000gp/T/vitality-smoke-n37ufm8k
+2026-06-05T22:39:49.315Z  [smoke] ✓ create-next-app succeeded
+2026-06-05T22:39:59.271Z  [smoke] ✓ shadcn init succeeded
+2026-06-05T22:40:02.774Z  [smoke] ✓ shadcn add https://lucastobrazil.github.io/vitality-v6-rehearsal-2/r/button.json succeeded
+2026-06-05T22:40:02.774Z  [smoke] ✓ component installed at /var/folders/9v/dml1nfyn747cf5nj1zh83p2m0000gp/T/vitality-smoke-n37ufm8k/components/ui/button.tsx
+2026-06-05T22:40:02.775Z  [smoke] PASS — registry is consumable

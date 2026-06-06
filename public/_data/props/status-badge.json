@@ -1,0 +1,31 @@
+{
+  "exports": [
+    {
+      "name": "StatusBadge",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": "false",
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "color",
+          "type": "\"default\" | \"neutral\" | null",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "severity",
+          "type": "\"default\" | \"success\" | \"warning\" | \"critical\" | \"info\" | \"brand\" | null",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

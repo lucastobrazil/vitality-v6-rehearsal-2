@@ -1,0 +1,17 @@
+{
+  "exports": [
+    {
+      "name": "Label",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

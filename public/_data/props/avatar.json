@@ -1,0 +1,93 @@
+{
+  "exports": [
+    {
+      "name": "Avatar",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "size",
+          "type": "\"default\" | \"sm\" | \"lg\" | null",
+          "default": "default",
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "variant",
+          "type": "\"neutral\" | \"primary\" | null",
+          "default": "neutral",
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "AvatarImage",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "onLoadingStatusChange",
+          "type": "((status: ImageLoadingStatus) => void)",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "AvatarFallback",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "delayMs",
+          "type": "number",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "variant",
+          "type": "\"neutral\" | \"primary\" | null",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "AvatarBadge",
+      "description": null,
+      "props": []
+    },
+    {
+      "name": "AvatarGroup",
+      "description": null,
+      "props": []
+    },
+    {
+      "name": "AvatarGroupCount",
+      "description": null,
+      "props": []
+    }
+  ]
+}

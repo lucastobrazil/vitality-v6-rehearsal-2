@@ -1,0 +1,234 @@
+{
+  "exports": [
+    {
+      "name": "AlertDialog",
+      "description": null,
+      "props": [
+        {
+          "name": "defaultOpen",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "onOpenChange",
+          "type": "((open: boolean) => void)",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "open",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "AlertDialogAction",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "size",
+          "type": "\"default\" | \"xs\" | \"sm\" | \"lg\" | \"icon\" | \"icon-xs\" | \"icon-sm\" | \"icon-lg\" | null",
+          "default": "default",
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "variant",
+          "type": "\"link\" | \"primary\" | \"outline\" | \"default\" | \"ghost\" | \"destructive\" | null",
+          "default": "default",
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "AlertDialogCancel",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "size",
+          "type": "\"default\" | \"xs\" | \"sm\" | \"lg\" | \"icon\" | \"icon-xs\" | \"icon-sm\" | \"icon-lg\" | null",
+          "default": "default",
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "variant",
+          "type": "\"link\" | \"primary\" | \"outline\" | \"default\" | \"ghost\" | \"destructive\" | null",
+          "default": "outline",
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "AlertDialogContent",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "forceMount",
+          "type": "true",
+          "default": null,
+          "required": false,
+          "description": "Used to force mounting when more control is needed. Useful when\ncontrolling animation with React animation libraries."
+        },
+        {
+          "name": "onCloseAutoFocus",
+          "type": "((event: Event) => void)",
+          "default": null,
+          "required": false,
+          "description": "Event handler called when auto-focusing on close.\nCan be prevented."
+        },
+        {
+          "name": "onEscapeKeyDown",
+          "type": "((event: KeyboardEvent) => void)",
+          "default": null,
+          "required": false,
+          "description": "Event handler called when the escape key is down.\nCan be prevented."
+        },
+        {
+          "name": "onFocusOutside",
+          "type": "((event: FocusOutsideEvent) => void)",
+          "default": null,
+          "required": false,
+          "description": "Event handler called when the focus moves outside of the `DismissableLayer`.\nCan be prevented."
+        },
+        {
+          "name": "onOpenAutoFocus",
+          "type": "((event: Event) => void)",
+          "default": null,
+          "required": false,
+          "description": "Event handler called when auto-focusing on open.\nCan be prevented."
+        },
+        {
+          "name": "size",
+          "type": "\"default\" | \"sm\"",
+          "default": "default",
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "AlertDialogDescription",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "AlertDialogFooter",
+      "description": null,
+      "props": []
+    },
+    {
+      "name": "AlertDialogHeader",
+      "description": null,
+      "props": []
+    },
+    {
+      "name": "AlertDialogMedia",
+      "description": null,
+      "props": []
+    },
+    {
+      "name": "AlertDialogOverlay",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "forceMount",
+          "type": "true",
+          "default": null,
+          "required": false,
+          "description": "Used to force mounting when more control is needed. Useful when\ncontrolling animation with React animation libraries."
+        }
+      ]
+    },
+    {
+      "name": "AlertDialogPortal",
+      "description": null,
+      "props": [
+        {
+          "name": "container",
+          "type": "Element | DocumentFragment | null",
+          "default": null,
+          "required": false,
+          "description": "Specify a container element to portal the content into."
+        },
+        {
+          "name": "forceMount",
+          "type": "true",
+          "default": null,
+          "required": false,
+          "description": "Used to force mounting when more control is needed. Useful when\ncontrolling animation with React animation libraries."
+        }
+      ]
+    },
+    {
+      "name": "AlertDialogTitle",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "AlertDialogTrigger",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

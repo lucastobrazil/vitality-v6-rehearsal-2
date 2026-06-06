@@ -1,0 +1,52 @@
+{
+  "exports": [
+    {
+      "name": "Switch",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "checked",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "defaultChecked",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "onCheckedChange",
+          "type": "((checked: boolean) => void)",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "required",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "size",
+          "type": "\"sm\" | \"default\"",
+          "default": "default",
+          "required": false,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

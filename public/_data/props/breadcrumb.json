@@ -1,0 +1,47 @@
+{
+  "exports": [
+    {
+      "name": "Breadcrumb",
+      "description": null,
+      "props": []
+    },
+    {
+      "name": "BreadcrumbList",
+      "description": null,
+      "props": []
+    },
+    {
+      "name": "BreadcrumbItem",
+      "description": null,
+      "props": []
+    },
+    {
+      "name": "BreadcrumbLink",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "BreadcrumbPage",
+      "description": null,
+      "props": []
+    },
+    {
+      "name": "BreadcrumbSeparator",
+      "description": null,
+      "props": []
+    },
+    {
+      "name": "BreadcrumbEllipsis",
+      "description": null,
+      "props": []
+    }
+  ]
+}

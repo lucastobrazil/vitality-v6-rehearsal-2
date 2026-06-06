@@ -1,0 +1,9 @@
+{
+  "exports": [
+    {
+      "name": "Textarea",
+      "description": null,
+      "props": []
+    }
+  ]
+}

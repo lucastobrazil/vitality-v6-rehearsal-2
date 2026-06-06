@@ -1,0 +1,38 @@
+{
+  "exports": [
+    {
+      "name": "Progress",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "getValueLabel",
+          "type": "((value: number, max: number) => string)",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "max",
+          "type": "number",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "value",
+          "type": "number | null",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

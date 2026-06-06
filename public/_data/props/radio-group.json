@@ -1,0 +1,114 @@
+{
+  "exports": [
+    {
+      "name": "RadioGroup",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "defaultValue",
+          "type": "string",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "dir",
+          "type": "Direction",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "loop",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "onValueChange",
+          "type": "((value: string) => void)",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "orientation",
+          "type": "\"horizontal\" | \"vertical\"",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "required",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "value",
+          "type": "string | null",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "RadioGroupItem",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "checked",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "required",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "value",
+          "type": "string | null",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "exports": [
+    {
+      "name": "Dialog",
+      "description": null,
+      "props": [
+        {
+          "name": "defaultOpen",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "modal",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "onOpenChange",
+          "type": "((open: boolean) => void)",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "open",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "DialogClose",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "DialogContent",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "forceMount",
+          "type": "true",
+          "default": null,
+          "required": false,
+          "description": "Used to force mounting when more control is needed. Useful when\ncontrolling animation with React animation libraries."
+        },
+        {
+          "name": "onCloseAutoFocus",
+          "type": "((event: Event) => void)",
+          "default": null,
+          "required": false,
+          "description": "Event handler called when auto-focusing on close.\nCan be prevented."
+        },
+        {
+          "name": "onEscapeKeyDown",
+          "type": "((event: KeyboardEvent) => void)",
+          "default": null,
+          "required": false,
+          "description": "Event handler called when the escape key is down.\nCan be prevented."
+        },
+        {
+          "name": "onFocusOutside",
+          "type": "((event: FocusOutsideEvent) => void)",
+          "default": null,
+          "required": false,
+          "description": "Event handler called when the focus moves outside of the `DismissableLayer`.\nCan be prevented."
+        },
+        {
+          "name": "onInteractOutside",
+          "type": "((event: PointerDownOutsideEvent | FocusOutsideEvent) => void)",
+          "default": null,
+          "required": false,
+          "description": "Event handler called when an interaction happens outside the `DismissableLayer`.\nSpecifically, when a `pointerdown` event happens outside or focus moves outside of it.\nCan be prevented."
+        },
+        {
+          "name": "onOpenAutoFocus",
+          "type": "((event: Event) => void)",
+          "default": null,
+          "required": false,
+          "description": "Event handler called when auto-focusing on open.\nCan be prevented."
+        },
+        {
+          "name": "onPointerDownOutside",
+          "type": "((event: PointerDownOutsideEvent) => void)",
+          "default": null,
+          "required": false,
+          "description": "Event handler called when the a `pointerdown` event happens outside of the `DismissableLayer`.\nCan be prevented."
+        },
+        {
+          "name": "showCloseButton",
+          "type": "boolean",
+          "default": "true",
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "DialogDescription",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "DialogFooter",
+      "description": null,
+      "props": [
+        {
+          "name": "showCloseButton",
+          "type": "boolean",
+          "default": "false",
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "DialogHeader",
+      "description": null,
+      "props": []
+    },
+    {
+      "name": "DialogOverlay",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "forceMount",
+          "type": "true",
+          "default": null,
+          "required": false,
+          "description": "Used to force mounting when more control is needed. Useful when\ncontrolling animation with React animation libraries."
+        }
+      ]
+    },
+    {
+      "name": "DialogPortal",
+      "description": null,
+      "props": [
+        {
+          "name": "container",
+          "type": "Element | DocumentFragment | null",
+          "default": null,
+          "required": false,
+          "description": "Specify a container element to portal the content into."
+        },
+        {
+          "name": "forceMount",
+          "type": "true",
+          "default": null,
+          "required": false,
+          "description": "Used to force mounting when more control is needed. Useful when\ncontrolling animation with React animation libraries."
+        }
+      ]
+    },
+    {
+      "name": "DialogTitle",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "DialogTrigger",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

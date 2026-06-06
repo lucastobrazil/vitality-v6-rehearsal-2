@@ -1,6 +1,10 @@
 import type { Metadata } from "next"
-import Link from "next/link"
 
+import { DocsSidebar } from "@/components/docs-sidebar"
+import { DocsToc } from "@/components/docs-toc"
+import { DocsTopBar } from "@/components/docs-topbar"
+
+import { Providers } from "./providers"
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -16,32 +20,18 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="min-h-screen bg-background font-sans text-foreground antialiased">
-        <header className="flex h-14 items-center gap-6 border-b bg-background px-6">
-          <Link href="/" className="text-base font-semibold tracking-tight">
-            Vitality v6
-          </Link>
-          <nav className="flex items-center gap-1">
-            <Link
-              href="/components"
-              className="rounded-md px-2 py-1 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
-            >
-              Components
-            </Link>
-            <Link
-              href="/blocks"
-              className="rounded-md px-2 py-1 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
-            >
-              Blocks
-            </Link>
-            <Link
-              href="/getting-started"
-              className="rounded-md px-2 py-1 text-sm text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
-            >
-              Getting started
-            </Link>
-          </nav>
-        </header>
-        <main className="mx-auto max-w-5xl p-8">{children}</main>
+        <Providers>
+          <DocsTopBar />
+          <div className="mx-auto flex w-full max-w-7xl gap-8 px-6">
+            <aside className="sticky top-14 hidden h-[calc(100vh-3.5rem)] w-[240px] shrink-0 overflow-y-auto md:block">
+              <DocsSidebar />
+            </aside>
+            <main className="min-w-0 flex-1 py-10">{children}</main>
+            <aside className="hidden w-[200px] shrink-0 xl:block">
+              <DocsToc />
+            </aside>
+          </div>
+        </Providers>
       </body>
     </html>
   )

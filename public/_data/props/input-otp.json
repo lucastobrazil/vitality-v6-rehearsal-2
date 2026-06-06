@@ -1,0 +1,103 @@
+{
+  "exports": [
+    {
+      "name": "InputOTP",
+      "description": null,
+      "props": [
+        {
+          "name": "maxLength",
+          "type": "number",
+          "default": null,
+          "required": true,
+          "description": null
+        },
+        {
+          "name": "containerClassName",
+          "type": "string",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "noScriptCSSFallback",
+          "type": "string | null",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "onChange",
+          "type": "((newValue: string) => unknown)",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "onComplete",
+          "type": "((...args: any[]) => unknown)",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "pasteTransformer",
+          "type": "((pasted: string) => string)",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "pushPasswordManagerStrategy",
+          "type": "\"none\" | \"increase-width\"",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "render",
+          "type": "InputOTPRenderFn",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "textAlign",
+          "type": "\"left\" | \"center\" | \"right\"",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "InputOTPGroup",
+      "description": null,
+      "props": []
+    },
+    {
+      "name": "InputOTPSlot",
+      "description": null,
+      "props": [
+        {
+          "name": "index",
+          "type": "number",
+          "default": null,
+          "required": true,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "InputOTPSeparator",
+      "description": null,
+      "props": []
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "exports": [
+    {
+      "name": "DateRangePicker",
+      "description": null,
+      "props": [
+        {
+          "name": "className",
+          "type": "string",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "numberOfMonths",
+          "type": "number",
+          "default": "2",
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "onChange",
+          "type": "((range: DateRange) => void) | undefined",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "placeholder",
+          "type": "string",
+          "default": "Pick a date range",
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "value",
+          "type": "DateRange",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

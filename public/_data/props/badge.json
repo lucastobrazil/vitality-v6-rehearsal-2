@@ -1,0 +1,24 @@
+{
+  "exports": [
+    {
+      "name": "Badge",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": "false",
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "variant",
+          "type": "\"default\" | \"secondary\" | \"destructive\" | \"outline\" | \"ghost\" | \"link\" | \"neutral\" | \"primary\" | \"success\" | \"warning\" | \"info\" | \"brand\" | null",
+          "default": "default",
+          "required": false,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

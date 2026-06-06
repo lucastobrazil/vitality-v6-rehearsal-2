@@ -1,0 +1,133 @@
+{
+  "exports": [
+    {
+      "name": "Tabs",
+      "description": null,
+      "props": [
+        {
+          "name": "activationMode",
+          "type": "\"manual\" | \"automatic\"",
+          "default": null,
+          "required": false,
+          "description": "Whether a tab is activated automatically or manually.\n@defaultValue automatic"
+        },
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "defaultValue",
+          "type": "string",
+          "default": null,
+          "required": false,
+          "description": "The value of the tab to select by default, if uncontrolled"
+        },
+        {
+          "name": "dir",
+          "type": "Direction",
+          "default": null,
+          "required": false,
+          "description": "The direction of navigation between toolbar items."
+        },
+        {
+          "name": "onValueChange",
+          "type": "((value: string) => void)",
+          "default": null,
+          "required": false,
+          "description": "A function called when a new tab is selected"
+        },
+        {
+          "name": "orientation",
+          "type": "\"horizontal\" | \"vertical\"",
+          "default": "horizontal",
+          "required": false,
+          "description": "The orientation the tabs are layed out.\nMainly so arrow navigation is done accordingly (left & right vs. up & down)\n@defaultValue horizontal"
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "default": null,
+          "required": false,
+          "description": "The value for the selected tab, if controlled"
+        }
+      ]
+    },
+    {
+      "name": "TabsList",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "loop",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "variant",
+          "type": "\"default\" | \"line\" | null",
+          "default": "default",
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "TabsTrigger",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "default": null,
+          "required": false,
+          "description": "The value for the selected tab, if controlled"
+        }
+      ]
+    },
+    {
+      "name": "TabsContent",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "forceMount",
+          "type": "true",
+          "default": null,
+          "required": false,
+          "description": "Used to force mounting when more control is needed. Useful when\ncontrolling animation with React animation libraries."
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "default": null,
+          "required": false,
+          "description": "The value for the selected tab, if controlled"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,351 @@
+{
+  "exports": [
+    {
+      "name": "Select",
+      "description": null,
+      "props": [
+        {
+          "name": "autoComplete",
+          "type": "string",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "defaultOpen",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "defaultValue",
+          "type": "string",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "dir",
+          "type": "Direction",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "form",
+          "type": "string",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "onOpenChange",
+          "type": "((open: boolean) => void)",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "onValueChange",
+          "type": "((value: string) => void)",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "open",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "required",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "SelectContent",
+      "description": null,
+      "props": [
+        {
+          "name": "align",
+          "type": "\"center\" | \"start\" | \"end\"",
+          "default": "center",
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "alignOffset",
+          "type": "number",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "arrowPadding",
+          "type": "number",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "avoidCollisions",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "collisionBoundary",
+          "type": "Boundary | Boundary[]",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "collisionPadding",
+          "type": "number | Partial<Record<\"top\" | \"right\" | \"bottom\" | \"left\", number>>",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "hideWhenDetached",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "onCloseAutoFocus",
+          "type": "((event: Event) => void)",
+          "default": null,
+          "required": false,
+          "description": "Event handler called when auto-focusing on close.\nCan be prevented."
+        },
+        {
+          "name": "onEscapeKeyDown",
+          "type": "((event: KeyboardEvent) => void)",
+          "default": null,
+          "required": false,
+          "description": "Event handler called when the escape key is down.\nCan be prevented."
+        },
+        {
+          "name": "onPointerDownOutside",
+          "type": "((event: PointerDownOutsideEvent) => void)",
+          "default": null,
+          "required": false,
+          "description": "Event handler called when the a `pointerdown` event happens outside of the `DismissableLayer`.\nCan be prevented."
+        },
+        {
+          "name": "position",
+          "type": "\"item-aligned\" | \"popper\"",
+          "default": "item-aligned",
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "side",
+          "type": "\"top\" | \"right\" | \"bottom\" | \"left\"",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "sideOffset",
+          "type": "number",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "sticky",
+          "type": "\"partial\" | \"always\"",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "updatePositionStrategy",
+          "type": "\"always\" | \"optimized\"",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "SelectGroup",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "SelectItem",
+      "description": null,
+      "props": [
+        {
+          "name": "value",
+          "type": "string",
+          "default": null,
+          "required": true,
+          "description": null
+        },
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "textValue",
+          "type": "string",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "SelectLabel",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "SelectScrollDownButton",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "SelectScrollUpButton",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "SelectSeparator",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "SelectTrigger",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "size",
+          "type": "\"sm\" | \"default\"",
+          "default": "default",
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "SelectValue",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "placeholder",
+          "type": "ReactNode",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

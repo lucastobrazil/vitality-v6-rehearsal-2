@@ -1,0 +1,45 @@
+{
+  "exports": [
+    {
+      "name": "Checkbox",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "checked",
+          "type": "CheckedState",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "defaultChecked",
+          "type": "CheckedState",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "onCheckedChange",
+          "type": "((checked: CheckedState) => void)",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "required",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

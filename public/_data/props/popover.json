@@ -1,0 +1,225 @@
+{
+  "exports": [
+    {
+      "name": "Popover",
+      "description": null,
+      "props": [
+        {
+          "name": "defaultOpen",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "modal",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "onOpenChange",
+          "type": "((open: boolean) => void)",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "open",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "PopoverAnchor",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "virtualRef",
+          "type": "RefObject<Measurable>",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "PopoverContent",
+      "description": null,
+      "props": [
+        {
+          "name": "align",
+          "type": "\"center\" | \"start\" | \"end\"",
+          "default": "center",
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "alignOffset",
+          "type": "number",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "arrowPadding",
+          "type": "number",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "avoidCollisions",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "collisionBoundary",
+          "type": "Boundary | Boundary[]",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "collisionPadding",
+          "type": "number | Partial<Record<\"top\" | \"right\" | \"bottom\" | \"left\", number>>",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "forceMount",
+          "type": "true",
+          "default": null,
+          "required": false,
+          "description": "Used to force mounting when more control is needed. Useful when\ncontrolling animation with React animation libraries."
+        },
+        {
+          "name": "hideWhenDetached",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "onCloseAutoFocus",
+          "type": "((event: Event) => void)",
+          "default": null,
+          "required": false,
+          "description": "Event handler called when auto-focusing on close.\nCan be prevented."
+        },
+        {
+          "name": "onEscapeKeyDown",
+          "type": "((event: KeyboardEvent) => void)",
+          "default": null,
+          "required": false,
+          "description": "Event handler called when the escape key is down.\nCan be prevented."
+        },
+        {
+          "name": "onFocusOutside",
+          "type": "((event: FocusOutsideEvent) => void)",
+          "default": null,
+          "required": false,
+          "description": "Event handler called when the focus moves outside of the `DismissableLayer`.\nCan be prevented."
+        },
+        {
+          "name": "onInteractOutside",
+          "type": "((event: PointerDownOutsideEvent | FocusOutsideEvent) => void)",
+          "default": null,
+          "required": false,
+          "description": "Event handler called when an interaction happens outside the `DismissableLayer`.\nSpecifically, when a `pointerdown` event happens outside or focus moves outside of it.\nCan be prevented."
+        },
+        {
+          "name": "onOpenAutoFocus",
+          "type": "((event: Event) => void)",
+          "default": null,
+          "required": false,
+          "description": "Event handler called when auto-focusing on open.\nCan be prevented."
+        },
+        {
+          "name": "onPointerDownOutside",
+          "type": "((event: PointerDownOutsideEvent) => void)",
+          "default": null,
+          "required": false,
+          "description": "Event handler called when the a `pointerdown` event happens outside of the `DismissableLayer`.\nCan be prevented."
+        },
+        {
+          "name": "side",
+          "type": "\"top\" | \"right\" | \"bottom\" | \"left\"",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "sideOffset",
+          "type": "number",
+          "default": "4",
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "sticky",
+          "type": "\"partial\" | \"always\"",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "updatePositionStrategy",
+          "type": "\"always\" | \"optimized\"",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "PopoverDescription",
+      "description": null,
+      "props": []
+    },
+    {
+      "name": "PopoverHeader",
+      "description": null,
+      "props": []
+    },
+    {
+      "name": "PopoverTitle",
+      "description": null,
+      "props": []
+    },
+    {
+      "name": "PopoverTrigger",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

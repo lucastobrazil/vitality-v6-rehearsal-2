@@ -1,0 +1,39 @@
+{
+  "exports": [
+    {
+      "name": "Alert",
+      "description": null,
+      "props": [
+        {
+          "name": "severity",
+          "type": "\"default\" | \"success\" | \"warning\" | \"critical\" | \"info\" | \"brand\" | null",
+          "default": "default",
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "size",
+          "type": "\"default\" | \"compact\" | \"blockCompact\" | null",
+          "default": "default",
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "AlertTitle",
+      "description": null,
+      "props": []
+    },
+    {
+      "name": "AlertDescription",
+      "description": null,
+      "props": []
+    },
+    {
+      "name": "AlertAction",
+      "description": null,
+      "props": []
+    }
+  ]
+}

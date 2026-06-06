@@ -1,0 +1,135 @@
+{
+  "exports": [
+    {
+      "name": "ToggleGroup",
+      "description": null,
+      "props": [
+        {
+          "name": "type",
+          "type": "\"single\" | \"multiple\"",
+          "default": null,
+          "required": true,
+          "description": null
+        },
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "defaultValue",
+          "type": "string | string[]",
+          "default": null,
+          "required": false,
+          "description": "The value of the item that is pressed when initially rendered. Use\n`defaultValue` if you do not need to control the state of a toggle group.\nThe value of the items that are pressed when initially rendered. Use\n`defaultValue` if you do not need to control the state of a toggle group."
+        },
+        {
+          "name": "dir",
+          "type": "Direction",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": "Whether the group is disabled from user interaction.\n@defaultValue false"
+        },
+        {
+          "name": "loop",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "onValueChange",
+          "type": "((value: string) => void) | ((value: string[]) => void)",
+          "default": null,
+          "required": false,
+          "description": "The callback that fires when the value of the toggle group changes.\nThe callback that fires when the state of the toggle group changes."
+        },
+        {
+          "name": "orientation",
+          "type": "\"horizontal\" | \"vertical\"",
+          "default": "horizontal",
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "rovingFocus",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": "Whether the group should maintain roving focus of its buttons.\n@defaultValue true"
+        },
+        {
+          "name": "size",
+          "type": "\"default\" | \"sm\" | \"lg\" | null",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "spacing",
+          "type": "number",
+          "default": "2",
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "value",
+          "type": "string | string[]",
+          "default": null,
+          "required": false,
+          "description": "The controlled stateful value of the item that is pressed.\nThe controlled stateful value of the items that are pressed."
+        },
+        {
+          "name": "variant",
+          "type": "\"default\" | \"outline\" | null",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "ToggleGroupItem",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "size",
+          "type": "\"default\" | \"sm\" | \"lg\" | null",
+          "default": "default",
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "value",
+          "type": "string | string[]",
+          "default": null,
+          "required": false,
+          "description": "The controlled stateful value of the item that is pressed.\nThe controlled stateful value of the items that are pressed."
+        },
+        {
+          "name": "variant",
+          "type": "\"default\" | \"outline\" | null",
+          "default": "default",
+          "required": false,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

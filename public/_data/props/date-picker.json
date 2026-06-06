@@ -1,0 +1,45 @@
+{
+  "exports": [
+    {
+      "name": "DatePicker",
+      "description": null,
+      "props": [
+        {
+          "name": "className",
+          "type": "string",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "onChange",
+          "type": "((date: Date) => void) | undefined",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "placeholder",
+          "type": "string",
+          "default": "Pick a date",
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "value",
+          "type": "Date",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

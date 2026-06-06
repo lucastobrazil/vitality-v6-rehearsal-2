@@ -1,0 +1,64 @@
+{
+  "exports": [
+    {
+      "name": "InputGroup",
+      "description": null,
+      "props": []
+    },
+    {
+      "name": "InputGroupAddon",
+      "description": null,
+      "props": [
+        {
+          "name": "align",
+          "type": "\"inline-start\" | \"inline-end\" | \"block-start\" | \"block-end\" | null",
+          "default": "inline-start",
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "InputGroupButton",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "size",
+          "type": "\"xs\" | \"sm\" | \"icon-xs\" | \"icon-sm\" | null",
+          "default": "xs",
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "variant",
+          "type": "\"link\" | \"primary\" | \"outline\" | \"default\" | \"ghost\" | \"destructive\" | null",
+          "default": "ghost",
+          "required": false,
+          "description": null
+        }
+      ]
+    },
+    {
+      "name": "InputGroupText",
+      "description": null,
+      "props": []
+    },
+    {
+      "name": "InputGroupInput",
+      "description": null,
+      "props": []
+    },
+    {
+      "name": "InputGroupTextarea",
+      "description": null,
+      "props": []
+    }
+  ]
+}

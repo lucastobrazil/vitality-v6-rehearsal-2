@@ -1,0 +1,31 @@
+{
+  "exports": [
+    {
+      "name": "Button",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": "false",
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "size",
+          "type": "\"default\" | \"xs\" | \"sm\" | \"lg\" | \"icon\" | \"icon-xs\" | \"icon-sm\" | \"icon-lg\" | null",
+          "default": "default",
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "variant",
+          "type": "\"primary\" | \"outline\" | \"default\" | \"ghost\" | \"destructive\" | \"link\" | null",
+          "default": "default",
+          "required": false,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

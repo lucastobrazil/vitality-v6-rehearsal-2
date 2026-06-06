@@ -1,0 +1,17 @@
+{
+  "exports": [
+    {
+      "name": "Chip",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": "false",
+          "required": false,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

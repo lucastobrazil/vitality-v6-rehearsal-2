@@ -1,0 +1,52 @@
+{
+  "exports": [
+    {
+      "name": "Toggle",
+      "description": null,
+      "props": [
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "defaultPressed",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": "The state of the toggle when initially rendered. Use `defaultPressed`\nif you do not need to control the state of the toggle.\n@defaultValue false"
+        },
+        {
+          "name": "onPressedChange",
+          "type": "((pressed: boolean) => void)",
+          "default": null,
+          "required": false,
+          "description": "The callback that fires when the state of the toggle changes."
+        },
+        {
+          "name": "pressed",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": "The controlled state of the toggle."
+        },
+        {
+          "name": "size",
+          "type": "\"default\" | \"sm\" | \"lg\" | null",
+          "default": "default",
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "variant",
+          "type": "\"default\" | \"outline\" | null",
+          "default": "default",
+          "required": false,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

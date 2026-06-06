@@ -1,0 +1,150 @@
+{
+  "exports": [
+    {
+      "name": "Toaster",
+      "description": null,
+      "props": [
+        {
+          "name": "className",
+          "type": "string",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "closeButton",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "containerAriaLabel",
+          "type": "string",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "dir",
+          "type": "\"rtl\" | \"ltr\" | \"auto\"",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "duration",
+          "type": "number",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "expand",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "gap",
+          "type": "number",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "hotkey",
+          "type": "string[]",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "icons",
+          "type": "ToastIcons",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "id",
+          "type": "string",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "invert",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "mobileOffset",
+          "type": "Offset",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "offset",
+          "type": "Offset",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "position",
+          "type": "Position",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "richColors",
+          "type": "boolean",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "style",
+          "type": "CSSProperties",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "swipeDirections",
+          "type": "SwipeDirection[]",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "theme",
+          "type": "\"light\" | \"dark\" | \"system\"",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "toastOptions",
+          "type": "ToastOptions",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "visibleToasts",
+          "type": "number",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

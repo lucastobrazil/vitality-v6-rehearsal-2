@@ -1,0 +1,24 @@
+{
+  "exports": [
+    {
+      "name": "Spinner",
+      "description": null,
+      "props": [
+        {
+          "name": "color",
+          "type": "\"default\" | \"primary\" | \"secondary\" | null",
+          "default": null,
+          "required": false,
+          "description": null
+        },
+        {
+          "name": "size",
+          "type": "\"sm\" | \"default\" | \"lg\" | \"xl\" | null",
+          "default": null,
+          "required": false,
+          "description": null
+        }
+      ]
+    }
+  ]
+}

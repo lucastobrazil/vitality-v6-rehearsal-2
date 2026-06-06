@@ -1,0 +1,182 @@
+[
+  {
+    "label": "Alert",
+    "type": "component",
+    "url": "/components/alert/"
+  },
+  {
+    "label": "Alert Dialog",
+    "type": "component",
+    "url": "/components/alert-dialog/"
+  },
+  {
+    "label": "Avatar",
+    "type": "component",
+    "url": "/components/avatar/"
+  },
+  {
+    "label": "Badge",
+    "type": "component",
+    "url": "/components/badge/"
+  },
+  {
+    "label": "Breadcrumb",
+    "type": "component",
+    "url": "/components/breadcrumb/"
+  },
+  {
+    "label": "Button",
+    "type": "component",
+    "url": "/components/button/"
+  },
+  {
+    "label": "Calendar",
+    "type": "component",
+    "url": "/components/calendar/"
+  },
+  {
+    "label": "Checkbox",
+    "type": "component",
+    "url": "/components/checkbox/"
+  },
+  {
+    "label": "Chip",
+    "type": "component",
+    "url": "/components/chip/"
+  },
+  {
+    "label": "Date Picker",
+    "type": "component",
+    "url": "/components/date-picker/"
+  },
+  {
+    "label": "Date Range Picker",
+    "type": "component",
+    "url": "/components/date-range-picker/"
+  },
+  {
+    "label": "Dialog",
+    "type": "component",
+    "url": "/components/dialog/"
+  },
+  {
+    "label": "Field",
+    "type": "component",
+    "url": "/components/field/"
+  },
+  {
+    "label": "Input",
+    "type": "component",
+    "url": "/components/input/"
+  },
+  {
+    "label": "Input Group",
+    "type": "component",
+    "url": "/components/input-group/"
+  },
+  {
+    "label": "Input Otp",
+    "type": "component",
+    "url": "/components/input-otp/"
+  },
+  {
+    "label": "Label",
+    "type": "component",
+    "url": "/components/label/"
+  },
+  {
+    "label": "Password Input",
+    "type": "component",
+    "url": "/components/password-input/"
+  },
+  {
+    "label": "Popover",
+    "type": "component",
+    "url": "/components/popover/"
+  },
+  {
+    "label": "Progress",
+    "type": "component",
+    "url": "/components/progress/"
+  },
+  {
+    "label": "Radio Group",
+    "type": "component",
+    "url": "/components/radio-group/"
+  },
+  {
+    "label": "Select",
+    "type": "component",
+    "url": "/components/select/"
+  },
+  {
+    "label": "Separator",
+    "type": "component",
+    "url": "/components/separator/"
+  },
+  {
+    "label": "Spinner",
+    "type": "component",
+    "url": "/components/spinner/"
+  },
+  {
+    "label": "Status Badge",
+    "type": "component",
+    "url": "/components/status-badge/"
+  },
+  {
+    "label": "Switch",
+    "type": "component",
+    "url": "/components/switch/"
+  },
+  {
+    "label": "Tabs",
+    "type": "component",
+    "url": "/components/tabs/"
+  },
+  {
+    "label": "Textarea",
+    "type": "component",
+    "url": "/components/textarea/"
+  },
+  {
+    "label": "Toaster",
+    "type": "component",
+    "url": "/components/toaster/"
+  },
+  {
+    "label": "Toggle",
+    "type": "component",
+    "url": "/components/toggle/"
+  },
+  {
+    "label": "Toggle Group",
+    "type": "component",
+    "url": "/components/toggle-group/"
+  },
+  {
+    "label": "Header",
+    "type": "block",
+    "url": "/blocks/header/"
+  },
+  {
+    "label": "Side Nav",
+    "type": "block",
+    "url": "/blocks/side-nav/"
+  },
+  {
+    "label": "Getting Started",
+    "type": "guide",
+    "url": "/guides/getting-started/"
+  },
+  {
+    "label": "Installation",
+    "type": "guide",
+    "url": "/guides/installation/"
+  },
+  {
+    "label": "Design Tokens",
+    "type": "guide",
+    "url": "/guides/design-tokens/"
+  }
+]

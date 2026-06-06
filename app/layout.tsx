@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 
+import { CommandPalette } from "@/components/command-palette"
 import { DocsSidebar } from "@/components/docs-sidebar"
 import { DocsToc } from "@/components/docs-toc"
 import { DocsTopBar } from "@/components/docs-topbar"
@@ -31,6 +32,7 @@ export default function RootLayout({
               <DocsToc />
             </aside>
           </div>
+          <CommandPalette />
         </Providers>
       </body>
     </html>

@@ -5,6 +5,7 @@ import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
 import { useEffect, useState } from "react"
 
+import { openCommandPalette } from "@/components/command-palette"
 import { Button } from "@/registry/vitality/ui/button"
 
 export function DocsTopBar() {
@@ -24,12 +25,12 @@ export function DocsTopBar() {
   )
 }
 
-// Static trigger for v1 — VDS-7 wires this to the cmdk command palette.
 function CommandTrigger() {
   return (
     <Button
       variant="outline"
       size="sm"
+      onClick={openCommandPalette}
       className="hidden gap-2 text-muted-foreground sm:inline-flex"
       aria-label="Search docs"
     >

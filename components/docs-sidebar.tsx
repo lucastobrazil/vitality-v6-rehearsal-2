@@ -3,7 +3,9 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { ListFilter } from "lucide-react"
+import { useState } from "react"
 
+import { SidebarFilter } from "@/components/sidebar-filter"
 import { classify, listSlugs } from "@/lib/classify"
 import { listBlocks } from "@/lib/blocks"
 import { cn } from "@/lib/utils"
@@ -19,11 +21,27 @@ export function DocsSidebar() {
   const components = listSlugs()
   const blocks = listBlocks()
 
+  const [filterOpen, setFilterOpen] = useState(false)
+  const [query, setQuery] = useState("")
+  const [vitalityOnly, setVitalityOnly] = useState(false)
+
+  const filteredComponents = components.filter((slug) => {
+    const status = classify(slug)
+    if (vitalityOnly && status === "Stock") return false
+    if (query.trim() === "") return true
+    return slug.toLowerCase().includes(query.trim().toLowerCase())
+  })
+
   return (
     <nav className="flex flex-col gap-8 py-6 text-sm" aria-label="Docs navigation">
       <Group title="Guides">
         {GUIDES.map((g) => (
-          <NavItem key={g.slug} href={`/guides/${g.slug}`} label={g.label} active={pathname === `/guides/${g.slug}` || pathname === `/guides/${g.slug}/`} />
+          <NavItem
+            key={g.slug}
+            href={`/guides/${g.slug}`}
+            label={g.label}
+            active={pathname === `/guides/${g.slug}` || pathname === `/guides/${g.slug}/`}
+          />
         ))}
       </Group>
 
@@ -47,26 +65,47 @@ export function DocsSidebar() {
         action={
           <button
             type="button"
-            aria-label="Filter components"
-            className="rounded p-1 text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+            aria-label={filterOpen ? "Hide filter" : "Filter components"}
+            aria-expanded={filterOpen}
+            onClick={() => setFilterOpen((open) => !open)}
+            className={cn(
+              "rounded p-1 transition-colors",
+              filterOpen
+                ? "bg-muted text-foreground"
+                : "text-muted-foreground hover:bg-muted hover:text-foreground"
+            )}
           >
             <ListFilter className="h-3.5 w-3.5" />
           </button>
         }
-      >
-        {components.map((slug) => {
-          const status = classify(slug)
-          const isCustomised = status !== "Stock"
-          return (
-            <NavItem
-              key={slug}
-              href={`/components/${slug}`}
-              label={titlecase(slug)}
-              active={pathname === `/components/${slug}` || pathname === `/components/${slug}/`}
-              indicator={isCustomised}
+        filter={
+          filterOpen ? (
+            <SidebarFilter
+              query={query}
+              onQueryChange={setQuery}
+              vitalityOnly={vitalityOnly}
+              onVitalityOnlyChange={setVitalityOnly}
             />
-          )
-        })}
+          ) : null
+        }
+      >
+        {filteredComponents.length === 0 ? (
+          <li className="px-2 py-2 text-xs text-muted-foreground">No matches.</li>
+        ) : (
+          filteredComponents.map((slug) => {
+            const status = classify(slug)
+            const isCustomised = status !== "Stock"
+            return (
+              <NavItem
+                key={slug}
+                href={`/components/${slug}`}
+                label={titlecase(slug)}
+                active={pathname === `/components/${slug}` || pathname === `/components/${slug}/`}
+                indicator={isCustomised}
+              />
+            )
+          })
+        )}
       </Group>
     </nav>
   )
@@ -75,10 +114,12 @@ export function DocsSidebar() {
 function Group({
   title,
   action,
+  filter,
   children,
 }: {
   title: string
   action?: React.ReactNode
+  filter?: React.ReactNode
   children: React.ReactNode
 }) {
   return (
@@ -89,6 +130,7 @@ function Group({
         </p>
         {action}
       </div>
+      {filter}
       <ul className="flex flex-col">{children}</ul>
     </div>
   )

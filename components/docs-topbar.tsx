@@ -49,11 +49,30 @@ function ThemeToggle() {
 
   const isDark = mounted && resolvedTheme === "dark"
 
+  useEffect(() => {
+    if (!mounted) return
+    function onKey(e: KeyboardEvent) {
+      if (!e.shiftKey || e.metaKey || e.ctrlKey || e.altKey) return
+      if (e.key.toLowerCase() !== "c") return
+      const target = e.target as HTMLElement | null
+      if (target) {
+        const tag = target.tagName
+        if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT") return
+        if (target.isContentEditable) return
+      }
+      e.preventDefault()
+      setTheme(isDark ? "light" : "dark")
+    }
+    window.addEventListener("keydown", onKey)
+    return () => window.removeEventListener("keydown", onKey)
+  }, [mounted, isDark, setTheme])
+
   return (
     <Button
       variant="ghost"
       size="icon-sm"
-      aria-label="Toggle theme"
+      aria-label="Toggle theme (Shift + C)"
+      title="Toggle theme — Shift+C"
       onClick={() => setTheme(isDark ? "light" : "dark")}
     >
       <Sun className="h-4 w-4 dark:hidden" />

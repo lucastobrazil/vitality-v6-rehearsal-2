@@ -80,19 +80,6 @@ export default function Example() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold tracking-tight">Cursor</h2>
-        <p className="mt-3 text-sm text-muted-foreground">
-          {title} follows Vitality cursor conventions:{" "}
-          <code className="rounded bg-muted/40 px-1 font-mono text-xs">cursor: pointer</code> on
-          interactive states,{" "}
-          <code className="rounded bg-muted/40 px-1 font-mono text-xs">cursor: not-allowed</code>{" "}
-          on disabled, and{" "}
-          <code className="rounded bg-muted/40 px-1 font-mono text-xs">cursor: text</code> for
-          text-input variants where applicable.
-        </p>
-      </section>
-
-      <section>
         <h2 className="text-xl font-semibold tracking-tight">API Reference</h2>
         <div className="mt-4">
           <ApiReference slug={slug} />
